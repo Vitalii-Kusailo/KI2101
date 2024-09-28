@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f4f5;
+        }
+        .container {
+            display: flex;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 800px;
+        }
+        .form-container {
+            padding: 20px;
+            width: 50%;
+        }
+        .form-container h1 {
+            font-size: 24px;
+            color: #333;
+        }
+        .form-container h1 span {
+            color: #33cc99;
+        }
+        .form-container p {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="file"],
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-container label {
+            font-size: 14px;
+            color: #555;
+        }
+        .form-container .submit-btn {
+            background-color: #33cc99;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .form-container .submit-btn:hover {
+            background-color: #28a889;
+        }
+        .contact-info {
+            padding: 20px;
+            background-color: #e8f5f1;
+            width: 50%;
+            position: relative;
+        }
+        .contact-info iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .contact-details {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+        .contact-details h4 {
+            margin: 0;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .contact-details p {
+            margin: 5px 0;
+        }
+        .contact-icons {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+        .contact-icons a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .contact-icons a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <h1>Get in <span>touch</span></h1>
+        <p>Enim tempor eget pharetra facilisis sed maecenas adipiscing.</p>
+        <form>
+            <input type="text" placeholder="Contact name" required>
+            <input type="text" placeholder="Street" required>
+            <input type="text" placeholder="City" required>
+            <input type="text" placeholder="Postcode" required>
+            <input type="text" placeholder="Contact Phone" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Let's talk about your idea" rows="3" required></textarea>
+            <label>
+                <input type="file" accept=".jpg,.png,.pdf"> Upload Additional file
+            </label>
+            <p>Attach file. File size should not exceed 10MB.</p>
+            <label>
+                <input type="checkbox"> I want to protect my data by signing an NDA
+            </label>
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <div class="contact-info">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.537804201377!2d14.414424!3d50.087811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e4f2bcd3d1%3A0xc30b79f28f0b!2sCharles%20Bridge%2C%20Prague%2C%20Czech%20Republic!5e0!3m2!1sen!2sus!4v1641937297731!5m2!1sen!2sus"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-details">
+            <h4>Headquarters</h4>
+            <p>Company s. r. o.</p>
+            <p>Street, 51</p>
+            <p>100 00 Prague</p>
+        </div>
+        <div class="contact-icons">
+            <a href="tel:+1111111111">Phone: +111 111 111</a>
+            <a href="mailto:info@company.com">E-MAIL: info@company.com</a>
+            <a href="https://helpdesk.com">HELPDESK: https://helpdesk.com</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
